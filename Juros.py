@@ -7,12 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/19LyMfgJQrP3CqZmNXCbuZOwPYNdpVvdt
 """
 
-print(f'CALCULANDO JUROS SIMPLES OU COMPOSTOS\n\nOBSERVAÇÕES 1:\nDigitar a taxa de juros e o tempo de aplicação com a mesma unidade de tempo (a unidade da taxa prevalece)\nDigitar a taxa de juros em porcentagem\nDigitar JS (ou js) para Juros Simples ou JC (ou jc) para Juros Compostos na operação\n')
-print(f'OBSERVAÇÕES 2:\nPara o valor presente -> Ex.: 53.420,25 deve ser digitado como 53420.25')
-print(f'Para a taxa de juros -> Ex.: 60% a.a deve ser digitado como 60')
-print(f'Para o tempo de aplicação -> Ex.: 3 (três) meses deve ser digitado como 3')
-print(f'Para a opereção -> Digitar JS (ou js) para juros simples ou JC (ou jc) para juros compostos\n')
-
+print(f'CALCULANDO JUROS SIMPLES OU COMPOSTOS\n\nOBSERVAÇÃO 1:\nDigitar a taxa de juros e o tempo de aplicação com a mesma unidade de tempo (a unidade da taxa prevalece)\nOBSERVAÇÃO 2:\nPara o valor presente -> Ex.: 53.420,25 deve ser digitado como 53420.25\nPara a taxa de juros -> Ex.: 60% a.a deve ser digitado como 60\nPara o tempo de aplicação -> Ex.: 3 (três) meses deve ser digitado como 3\nPara a opereção -> Digitar JS (ou js) para juros simples ou JC (ou jc) para juros compostos\n')
 
 VP = float(input(f'Digite o valor presente: '))
 i = float(input(f'Digite a taxa de juros: ')) / 100
@@ -29,6 +24,6 @@ if resposta == "JS" or resposta == "js":
 else:
     def juros_compostos(VP, i, t):
         VF = VP * ((1 + i) ** t)
-        print(f'\nO valor futuro (VF) é: {round(VF, 2)}\nO lucro obtido é: {round(VF-VP, 2)}13')
+        print(f'\nO valor futuro (VF) é: {round(VF, 2)}\nO lucro obtido é: {round(VF-VP, 2)}')
 
     juros_compostos(VP, i, t)
